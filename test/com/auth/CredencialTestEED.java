@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import junit.framework.TestCase;
 
-class CredencialTestEED extends TestCase{
+class CredencialTestEED{
 
 	private static Credencial credencial1;
 	private static Credencial credencial2;
@@ -29,7 +29,8 @@ class CredencialTestEED extends TestCase{
 	
 	@Test
 	public void testComprobarPassword() {
-		assert(credencial1.comprobarPassword("Password1"));
+		assert(credencial2.comprobarPassword("Password"));
+		assertFalse(credencial2.comprobarPassword("Password1"));
 	}
 	
 	@Test
